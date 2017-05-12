@@ -1,5 +1,5 @@
 div{
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   height: 200px;
 }
 header{
@@ -9,4 +9,29 @@ header{
   height: 20px;
   margin: 0;
   padding: 0;
+}
+main{
+  background: fixed no-repeat;
+}
+#size{
+  height: 80px;
+}
+#fistlevel  {
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#fistlevel p {
+width: 22%;
+background: #F4F4F1;
+color:#A3A3A3;
+border-radius: 3px;
+text-align: center;
+  margin: 0px 3px;
+  padding: 3px;
+}
+#fistlevel p:hover{
+  background: #4A4A4C;
+  color: white;
 }
