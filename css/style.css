@@ -3,17 +3,28 @@ div{
   height: 150px;
   margin: 15px 0px;
 }
-img{
-  padding: 0px;
+header{
+  position: sticky  ;
+  top: 0;
+  background-color: white;
 }
+#highmenu{
+  background-color: white;
+}
+
 header{
   margin: 0;
+  z-index: 3;
 }
 #highmenu{
   height: 20px;
   margin: 0;
   padding: 0;
 }
+main , main img{
+  background: #FCFCFC;
+}
+
 #slide{
   margin: 45px 0px;
   padding: 0px;
