@@ -8,6 +8,47 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript">
+        //<![CDATA[
+        (function() {
+            function a(a) {
+                var b, c, d = window.document.createElement("iframe");
+                d.src = "javascript:false", (d.frameElement || d).style.cssText = "width: 0; height: 0; border: 0";
+                var e = window.document.createElement("div");
+                e.style.display = "none";
+                var f = window.document.createElement("div");
+                e.appendChild(f), window.document.body.insertBefore(e, window.document.body.firstChild), f.appendChild(d);
+                try {
+                    c = d.contentWindow.document
+                } catch (g) {
+                    b = document.domain, d.src = "javascript:var d=document.open();d.domain='" + b + "';void(0);", c = d.contentWindow.document
+                }
+                return c.open()._l = function() {
+                    b && (this.domain = b);
+                    var c = this.createElement("scr".concat("ipt"));
+                    c.src = a, this.body.appendChild(c)
+                }, c.write("<bo".concat('dy onload="document._l();">')), c.close(), d
+            }
+            var b = "nostojs";
+            window[b] = window[b] || function(a) {
+                (window[b].q = window[b].q || []).push(a)
+            }, window[b].l = new Date;
+            var c = function(d, e) {
+                if (!document.body) return setTimeout(function() {
+                    c(d, e)
+                }, 30);
+                e = e || {}, window[b].o = e;
+                var f = document.location.protocol,
+                    g = ["https:" === f ? f : "http:", "//", e.host || "connect.nosto.com", e.path || "/include/", d].join("");
+                a(g)
+            };
+            window[b].init = c
+        })();
+
+        nostojs.init('[accountID]');
+
+        //]]>
+    </script>
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -34,61 +75,37 @@
                         </ul>
                     </div>
 
-                                </div>
-                            </div>
-                        </div>
-
-
-            <div class="nosto_cart" style="display:none">
-
-            <div class="nosto_category" style="display:none">/Accueil/De ville</div>
-            <div class="nosto_element" id="nosto-page-top"></div>
-            <nav id="categories_block_top" role="navigation" class="hidden-xs hidden-sm">
-                <ul class="nav">
-                    <li class="cat6 current">
-                        <a href="//www.archiduchesse.com/fr/"> <i></i> <strong>De ville</strong> <span>Lisses &amp; hautes</span> </a>
-                    </li>
-                    <li class="cat22">
-                        <a href="//www.archiduchesse.com/fr/22-chaussettes-de-luxe"> <i></i> <strong>De luxe</strong> <span>Mi-bas Fil d'écosse</span> </a>
-                    </li>
-                    <li class="cat5">
-                        <a href="//www.archiduchesse.com/fr/5-bouclette"> <i></i> <strong>Bouclette</strong> <span>Douces &amp; chaudes</span> </a>
-                    </li>
-                    <li class="cat9">
-                        <a href="//www.archiduchesse.com/fr/9-chaussettes-fantaisie"> <i></i> <strong>Fantaisie</strong> <span>Drôles de chaussettes</span> </a>
-                    </li>
-                    <li class="cat7">
-                        <a href="//www.archiduchesse.com/fr/7-socquettes"> <i></i> <strong>Socquette</strong> <span>Courtes &amp; fines</span> </a>
-                    </li>
-                    <li class="cat25">
-                        <a href="//www.archiduchesse.com/fr/25-collant"> <i></i> <strong>Collant</strong> <span>Pour Femme</span> </a>
-                    </li>
-                    <li class="cat29">
-                        <a href="//www.archiduchesse.com/fr/29-t-shirt"> <i></i> <strong>T-Shirt</strong> <span>Pour Homme</span> <span class="promo-temp">-20%</span> </a>
-                    </li>
-                    <li class="cat31">
-                        <a href="//www.archiduchesse.com/fr/31-courte"> <i></i> <strong>Courte</strong> <span>Mi-chaussettes fines</span> </a>
-                    </li>
-                    <li class="cat33">
-                        <a href="//www.archiduchesse.com/fr/33-espadrilles"> <i></i> <strong>Espadrilles</strong> <span>Chaussures</span> </a>
-                    </li>
-                </ul>
-            </nav>
-          </div>
-
+                </div>
+            </div>
+    <ul id="navmenu2" class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link active" href="#"><em>De ville</em><br>lisses & hautes</a>
+    </li>
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link" href="#"><em>De luxe</em><br>mi-bas Fil d'ecosse</a>
+    </li>
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link" href="#"><em>Bouclette</em><br>Douces & chaudes</a>
+    </li>
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link disabled" href="#"><em>Fantaisie</em><br>Dorle de chaussettes</a>
+    </li>
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link disabled" href="#"><em>socquette</em><br>courtes & fines</a>
+    </li>
+    <li class="nav-item">
+      <img class="col-md-6"src="img/nav.svg" alt="">
+      <a class="nav-link disabled" href="#"><em>Collant</em><br>pour femme</a>
+    </li>
+  </ul>
+</div>
     </header>
 
-    <!-- <header class="container-fluid ">
-
-  <section id="highmenu" class=" row ">
-
-
-      <span class="glyphicon glyphicon-menu-hamburger col-xs-2" aria-hidden="true"></span>
-
-    <img src="img/logo.svg" alt="logo" class="col-xs-6">
-<i class="glyphicon glyphicon-shopping-cart col-xs-4 "></i>
-  </section>
-</header> -->
 
     <main class="container">
         <h2>Chaussettes de ville</h2>
@@ -108,9 +125,9 @@
         </div>
         <section>
 
-            <div class="product-container col-xs-9 col-offset-3">
+            <div class="product-container col-xs-9 col-offset-3 col-md-6" >
                 <p>6.30€</p>
-                <img class="col-xs-12 " src="img/bordeaux-socks.jpg" alt="chaussette ">
+                <img class="col-xs-12 col-md-6 " src="img/bordeaux-socks.jpg" alt="chaussette ">
                 <h5>Rouge maison close</h5>
             </div>
             <div id="slide" class="col-xs-12 row">
