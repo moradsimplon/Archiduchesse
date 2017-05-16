@@ -8,47 +8,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script type="text/javascript">
-        //<![CDATA[
-        (function() {
-            function a(a) {
-                var b, c, d = window.document.createElement("iframe");
-                d.src = "javascript:false", (d.frameElement || d).style.cssText = "width: 0; height: 0; border: 0";
-                var e = window.document.createElement("div");
-                e.style.display = "none";
-                var f = window.document.createElement("div");
-                e.appendChild(f), window.document.body.insertBefore(e, window.document.body.firstChild), f.appendChild(d);
-                try {
-                    c = d.contentWindow.document
-                } catch (g) {
-                    b = document.domain, d.src = "javascript:var d=document.open();d.domain='" + b + "';void(0);", c = d.contentWindow.document
-                }
-                return c.open()._l = function() {
-                    b && (this.domain = b);
-                    var c = this.createElement("scr".concat("ipt"));
-                    c.src = a, this.body.appendChild(c)
-                }, c.write("<bo".concat('dy onload="document._l();">')), c.close(), d
-            }
-            var b = "nostojs";
-            window[b] = window[b] || function(a) {
-                (window[b].q = window[b].q || []).push(a)
-            }, window[b].l = new Date;
-            var c = function(d, e) {
-                if (!document.body) return setTimeout(function() {
-                    c(d, e)
-                }, 30);
-                e = e || {}, window[b].o = e;
-                var f = document.location.protocol,
-                    g = ["https:" === f ? f : "http:", "//", e.host || "connect.nosto.com", e.path || "/include/", d].join("");
-                a(g)
-            };
-            window[b].init = c
-        })();
-
-        nostojs.init('[accountID]');
-
-        //]]>
-    </script>
+   <link rel="stylesheet" href="css/bootstrap.min.css"> <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="css/animation.css"> <!-- end css imports -->
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -59,14 +19,17 @@
 <body>
 
     <!--HEADER  -->
-    <div class="header-container hidden-xs hidden-sm">
+    <div id="headdiv" class="header-container ">
         <header id="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <a id="header_logo" href="https://www.archiduchesse.com/fr/" title="Archiduchesse"> </a>
+
+                    <div class="col-xs-12 col-sm-4">
+<i class="glyphicon glyphicon-menu-hamburger col-xs-3"></i>
+                        <a id="header_logo" class="col-xs-6" href="https://www.archiduchesse.com/fr/" title="Archiduchesse"> </a>
+                        <i id="caddie" class="col-xs-3"></i>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 hidden-sm hidden-xs">
                         <ul id="mainmenu">
                             <li class="menu_actif"><a style="border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;" title="" href="/fr/">Shop</a></li>
                             <li><a style="border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;" title="" href="/blog/">Blog</a></li>
@@ -77,7 +40,9 @@
 
                 </div>
             </div>
-    <ul id="navmenu2" class="nav nav-pills nav-justified">
+
+
+    <ul id="navmenu2" class="nav nav-pills nav-justified hidden-xs hidden-sm">
     <li class="nav-item">
       <img class="col-md-6"src="img/nav.svg" alt="">
       <a class="nav-link active" href="#"><em>De ville</em><br>lisses & hautes</a>
@@ -103,8 +68,8 @@
       <a class="nav-link disabled" href="#"><em>Collant</em><br>pour femme</a>
     </li>
   </ul>
-</div>
     </header>
+  </div>
 
 
     <main class="container">
@@ -123,15 +88,15 @@
             </div>
 
         </div>
-        <section>
+        <section id="partproduct">
 
-            <div class="product-container col-xs-9 col-offset-3 col-md-6" >
+            <div  class="product-container col-xs-9 col-offset-3 col-sm-4 col-md-6" >
                 <p>6.30€</p>
-                <img class="col-xs-12 col-md-6 " src="img/bordeaux-socks.jpg" alt="chaussette ">
+                <img class="col-xs-12 col-sm-7 col-md-6 " src="img/bordeaux-socks.jpg" alt="chaussette ">
                 <h5>Rouge maison close</h5>
             </div>
             <div id="slide" class="col-xs-12 row">
-                <img class="col-xs-12" src="img/22.jpg" alt="publicité">
+                <img class="col-xs-12 col-md-9" src="img/22.jpg" alt="publicité">
             </div>
             <div class="product-container col-xs-6 col-sm-4 col-offset-1">
                 <p>6.30€</p>
